@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <h2 class="logo">port<span>folio</span></h2>
+          <ul class="menu">
+            <li><a href="#About">About</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>    
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="content">
+        <div class="body">
+        <h1>Cod<span>ing</span></h1>
+        </div>
+      </div>
+    </section>
+    <section class="About" id="About">
+      <div class="container">
+        <h2>About</h2>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <img src="./img/main-pc.jpg" alt=""/>
+          </div>
+          <div class="col">
+            <h5>磯貝恭平(isogai kyouhei)</h5>
+            <p class="text">東京都在住の20歳。自由度の高さと奥深い内容にのめり込み、2023年よりプログラミング学習を開始。HTML/CSSを学習しながら日々スキルアップを図っています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill" id="skill">
+      <div class="container">
+        <h2>skill</h2>
+        <hr>
+        <div  class="row">
+          <div class="col">
+            <div class="number">1</div>
+            <img src="./img/pc.jpeg" class="icon" alt="">
+            <h3>html/css</h3>
+            <p class="text">1年以上勉強をしておしゃれなHPやLPを書くことができます。</p>
+          </div>
+          <div class="col">
+            <div class="number">2</div>
+            <img src="./img/note.jpeg" class="icon" alt="">
+            <h3>java</h3>
+            <p class="text">現在oracle認定シルバーに向けて勉強中です。</p>
+          </div>
+           <!--<div class="col">
+            <div class="number">3</div>
+            <img src="./img/sumaho.jpeg" class="icon" alt="">
+            <h3>java</h3>
+            <p class="text">q</p>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="container">
+        <h2>works</h2>
+        <hr>
+        <p>過去の制作物の一部を紹介します。</p>
+        <div class="content">
+          <a href="https://kyouhei0706.github.io/rensyu1/" target="_blank" rel="noopener noreferrer"><img src="./img/rensyu1.png"/></a>
+          <a href="https://kyouhei0706.github.io/rensyu2/" target="_blank" rel="noopener noreferrer"><img src="./img/rensyu2.png"/></a>
+          <a href=""><img src="./img/main-pc.jpg"/></a>
+          <a href=""><img src="./img/main-pc.jpg"/></a>
+          <a href=""><img src="./img/main-pc.jpg"/></a>
+          <a href=""><img src="./img/main-pc.jpg"/></a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+          <h2>contact</h2>
+          <hr>
+          <form action="./submit.php" method="post">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="名前を入力" required>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="メールアドレスを入力" required>
+            <label for="message">message</label>
+            <textarea type="text" id="message" name="message" rows="6" placeholder="内容を入力" required></textarea>
+            <input type="submit" value="送信する">
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
